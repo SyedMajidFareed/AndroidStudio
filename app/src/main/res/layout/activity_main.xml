@@ -21,6 +21,8 @@
 
             <Button
                 android:id="@+id/sevenBTN"
+
+                android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
@@ -29,6 +31,7 @@
 
             <Button
                 android:id="@+id/eightBTN"
+                android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
@@ -37,6 +40,7 @@
 
             <Button
                 android:id="@+id/nineBTN"
+                android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
@@ -45,6 +49,7 @@
 
             <Button
                 android:id="@+id/plusBTN"
+                android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
@@ -59,7 +64,7 @@
             <Button
                 android:id="@+id/fourBTN"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,7 +73,7 @@
             <Button
                 android:id="@+id/fiveBTN"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -78,7 +83,7 @@
                 android:id="@+id/sixBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/six" />
@@ -87,7 +92,7 @@
                 android:id="@+id/minusBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/minus" />
@@ -101,7 +106,7 @@
                 android:id="@+id/oneBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/one" />
@@ -110,7 +115,7 @@
                 android:id="@+id/twoBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/two" />
@@ -119,7 +124,7 @@
                 android:id="@+id/threeBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/three" />
@@ -128,7 +133,7 @@
                 android:id="@+id/multiplyBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/multiply" />
@@ -140,7 +145,7 @@
 
             <Button
                 android:id="@+id/clearBTN"
-
+                android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:layout_width="wrap_content"
@@ -151,7 +156,7 @@
                 android:id="@+id/zeroBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/zero" />
@@ -160,7 +165,7 @@
                 android:id="@+id/pointBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/point" />
@@ -169,7 +174,7 @@
                 android:id="@+id/divideBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/divide" />
@@ -183,7 +188,7 @@
                 android:id="@+id/equalBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-
+                android:background="@drawable/btn_bg_color"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/equal" />
