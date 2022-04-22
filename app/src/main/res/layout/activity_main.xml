@@ -25,8 +25,8 @@
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/seven" />
 
             <Button
@@ -35,8 +35,8 @@
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/eight" />
 
             <Button
@@ -45,8 +45,8 @@
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/nine" />
 
             <Button
@@ -55,8 +55,8 @@
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/plus" />
         </TableRow>
 
@@ -70,8 +70,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/four" />
 
             <Button
@@ -80,8 +80,8 @@
                 android:layout_margin="4dp"
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/five" />
 
             <Button
@@ -90,8 +90,8 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/six" />
 
             <Button
@@ -100,8 +100,8 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/minus" />
         </TableRow>
 
@@ -115,8 +115,8 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/one" />
 
             <Button
@@ -125,8 +125,8 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/two" />
 
             <Button
@@ -135,8 +135,8 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/three" />
 
             <Button
@@ -144,9 +144,9 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_margin="4dp"
-                android:layout_height="wrap_content"
+                android:layout_height="75dp"
                 android:text="@string/multiply" />
         </TableRow>
 
@@ -160,8 +160,8 @@
                 android:layout_margin="4dp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/clear" />
 
             <Button
@@ -170,8 +170,8 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/zero" />
 
             <Button
@@ -180,8 +180,8 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/point" />
 
             <Button
@@ -190,8 +190,8 @@
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/divide" />
         </TableRow>
 
@@ -205,16 +205,19 @@
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="75dp"
                 android:text="@string/equal" />
         </TableRow>
     </TableLayout>
 
     <TextView
         android:id="@+id/displayView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+
         android:text="@string/display"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
