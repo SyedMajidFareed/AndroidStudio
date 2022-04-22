@@ -21,6 +21,7 @@
 
             <Button
                 android:id="@+id/sevenBTN"
+                android:textSize="25sp"
                 android:layout_margin="4dp"
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
@@ -32,6 +33,7 @@
             <Button
                 android:id="@+id/eightBTN"
                 android:layout_margin="4dp"
+                android:textSize="25sp"
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
@@ -40,6 +42,7 @@
                 android:text="@string/eight" />
 
             <Button
+                android:textSize="25sp"
                 android:id="@+id/nineBTN"
                 android:layout_margin="4dp"
                 android:background="@drawable/btn_bg_color"
@@ -51,6 +54,7 @@
 
             <Button
                 android:id="@+id/plusBTN"
+                android:textSize="25sp"
                 android:layout_margin="4dp"
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
@@ -66,6 +70,7 @@
 
             <Button
                 android:id="@+id/fourBTN"
+                android:textSize="25sp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
@@ -77,6 +82,7 @@
             <Button
                 android:id="@+id/fiveBTN"
                 android:layout_weight="1"
+                android:textSize="25sp"
                 android:layout_margin="4dp"
                 android:background="@drawable/btn_bg_color"
                 style="@style/Widget.AppCompat.Button.Borderless"
@@ -87,6 +93,7 @@
             <Button
                 android:id="@+id/sixBTN"
                 android:layout_margin="4dp"
+                android:textSize="25sp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
@@ -97,6 +104,7 @@
             <Button
                 android:id="@+id/minusBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="25sp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
@@ -116,12 +124,14 @@
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
                 android:layout_width="0dp"
+                android:textSize="25sp"
                 android:layout_height="75dp"
                 android:text="@string/one" />
 
             <Button
                 android:id="@+id/twoBTN"
                 android:layout_margin="4dp"
+                android:textSize="25sp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
@@ -132,6 +142,7 @@
             <Button
                 android:id="@+id/threeBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="25sp"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
@@ -143,6 +154,7 @@
                 android:id="@+id/multiplyBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
+                android:textSize="25sp"
                 android:background="@drawable/btn_bg_color"
                 android:layout_width="0dp"
                 android:layout_margin="4dp"
@@ -157,6 +169,7 @@
             <Button
                 android:id="@+id/clearBTN"
                 android:background="@drawable/btn_bg_color"
+                android:textSize="25sp"
                 android:layout_margin="4dp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
@@ -168,6 +181,7 @@
                 android:id="@+id/zeroBTN"
                 android:layout_margin="4dp"
                 style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="25sp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
                 android:layout_width="0dp"
@@ -178,6 +192,7 @@
                 android:id="@+id/pointBTN"
                 android:layout_margin="4dp"
                 style="@style/Widget.AppCompat.Button.Borderless"
+                android:textSize="25sp"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
                 android:layout_width="0dp"
@@ -187,6 +202,7 @@
             <Button
                 android:id="@+id/divideBTN"
                 android:layout_margin="4dp"
+                android:textSize="25sp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_weight="1"
                 android:background="@drawable/btn_bg_color"
@@ -201,6 +217,7 @@
 
             <Button
                 android:id="@+id/equalBTN"
+                android:textSize="25sp"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_margin="4dp"
                 android:layout_weight="1"
@@ -213,6 +230,7 @@
 
     <TextView
         android:id="@+id/displayView"
+        android:textSize="55sp"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:layout_weight="1"
