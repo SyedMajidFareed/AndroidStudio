@@ -4,13 +4,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
 
+    private EditText display;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        display = findViewById(R.id.displayView);
+        /*to disable the keyboard from popping up when the user clicks on the textViewer*/
+        display.setShowSoftInputOnFocus(false);
+        display.setOnClickListener(new View.OnClickListener() {
+            @Override
+            /*to remove what is written within the textViewer when the user clicks on it*/
+            public void onClick(View view) {
+                if(getString(R.string.display).equals(display.getText().toString()))
+                {
+                    display.setText("");
+                }
+            }
+        });
     }
     public void zeroBTN(View view)
     {
