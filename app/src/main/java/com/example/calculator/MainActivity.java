@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         {
          oldStr="";
         }
+
         else {
             oldStr += strToAdd;
             display.setText(oldStr);
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void oneBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void twoBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -87,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void threeBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -96,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void fourBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -105,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void fiveBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -114,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sixBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -123,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sevenBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -132,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void eightBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -141,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void nineBTN(View view)
     {
-        if (getString(R.string.display).equals(display.getText().toString()))
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
         {
             display.setText("");
         }
@@ -150,9 +151,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void pointBTN(View view)
     {
-
-        updateText(".");
-
+        if (getString(R.string.display).equals(display.getText().toString()) || display.getText().toString().equals("Enter a number"))
+        {
+            display.setText("");
+        }
+        else if(!display.getText().toString().contains(".")) {
+            updateText(".");
+        }
     }
     public void clearBTN(View view)
     {
@@ -161,70 +166,89 @@ public class MainActivity extends AppCompatActivity {
     public void plusBTN(View view)
     {
         operator = "+";
+        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        {
+            display.setText("Enter a number");
+        }
+        else
+        {
+            String temp = display.getText().toString();
+            num1 = Double.valueOf(temp);
+            updateText("");
+            display.setText("");
+        }
 
-        String temp=display.getText().toString();
-        num1 = Double.valueOf(temp);
-        updateText("");
-        display.setText("");
     }
     public void minusBTN(View view)
     {
         operator = "-";
-        String temp=display.getText().toString();
-        num1 = Double.valueOf(temp);
-        updateText("");
-        display.setText("");
-
+        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        {
+            display.setText("Enter a number");
+        }
+        else {
+            String temp = display.getText().toString();
+            num1 = Double.valueOf(temp);
+            updateText("");
+            display.setText("");
+        }
     }
-    public void multiplyBTN(View view)
-    {
+    public void multiplyBTN(View view) {
         operator = "*";
-        String temp=display.getText().toString();
-        num1 = Double.valueOf(temp);
-        updateText("");
-        display.setText("");
+        if (display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        {
+            display.setText("Enter a number");
+        } else {
+            String temp = display.getText().toString();
+            num1 = Double.valueOf(temp);
+            updateText("");
+            display.setText("");
+
+        }
     }
     public void divideBTN(View view)
     {
         operator = "/";
-        String temp=display.getText().toString();
-        num1 = Double.valueOf(temp);
-        updateText("");
-        display.setText("");
-
+        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        {
+            display.setText("Enter a number");
+        }
+        else {
+            String temp = display.getText().toString();
+            num1 = Double.valueOf(temp);
+            updateText("");
+            display.setText("");
+        }
     }
     public void equalBTN(View view)
     {
         String temp1 = "";
         temp1 = display.getText().toString();
+        if(temp1.equals("") || display.getText().toString().equals("Enter a number"))
+        {
+            display.setText("Enter a number");
+        }
+        else {
+            num2 = Double.valueOf(temp1);
 
-        num2 = Double.valueOf(temp1);
-        if(operator.equals("+"))
-        {
-            double result = num1 + num2;
-            display.setText(Double.toString(result));
-        }
-        else if(operator.equals("-"))
-        {
-            double result = num1 - num2;
-            display.setText(Double.toString(result));
-        }
-        else if(operator.equals("*"))
-        {
-            double result = num1 * num2;
-            display.setText(Double.toString(result));
-        }
-        else if(operator.equals("/"))
-        {
-            if(num2 == 0)
-            {
-                display.setText("Can not divide by 0");
-                num2 = 1;
+            if (operator.equals("+")) {
+                double result = num1 + num2;
+                display.setText(Double.toString(result));
+            } else if (operator.equals("-")) {
+                double result = num1 - num2;
+                display.setText(Double.toString(result));
+            } else if (operator.equals("*")) {
+                double result = num1 * num2;
+                display.setText(Double.toString(result));
+            } else if (operator.equals("/")) {
+                if (num2 == 0) {
+                    display.setText("Can not divide by 0");
+                    num2 = 1;
+                }
+
+                double result = num1 / num2;
+                display.setText(Double.toString(result));
             }
-
-            double result = num1 / num2;
-            display.setText(Double.toString(result));
         }
-
     }
 }
