@@ -9,7 +9,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     private EditText display;
-    int num1, num2;
+    double num1, num2;
     String operator;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity {
     public void pointBTN(View view)
     {
 
-        //updateText(".");
+        updateText(".");
 
     }
     public void clearBTN(View view)
@@ -161,8 +161,9 @@ public class MainActivity extends AppCompatActivity {
     public void plusBTN(View view)
     {
         operator = "+";
+
         String temp=display.getText().toString();
-        num1 = Integer.valueOf(temp);
+        num1 = Double.valueOf(temp);
         updateText("");
         display.setText("");
     }
@@ -170,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
     {
         operator = "-";
         String temp=display.getText().toString();
-        num1 = Integer.valueOf(temp);
+        num1 = Double.valueOf(temp);
         updateText("");
         display.setText("");
 
@@ -179,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
     {
         operator = "*";
         String temp=display.getText().toString();
-        num1 = Integer.valueOf(temp);
+        num1 = Double.valueOf(temp);
         updateText("");
         display.setText("");
     }
@@ -187,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
     {
         operator = "/";
         String temp=display.getText().toString();
-        num1 = Integer.valueOf(temp);
+        num1 = Double.valueOf(temp);
         updateText("");
         display.setText("");
 
@@ -197,21 +198,21 @@ public class MainActivity extends AppCompatActivity {
         String temp1 = "";
         temp1 = display.getText().toString();
 
-        num2 = Integer.valueOf(temp1);
+        num2 = Double.valueOf(temp1);
         if(operator.equals("+"))
         {
-            int result = num1 + num2;
-            display.setText(Integer.toString(result));
+            double result = num1 + num2;
+            display.setText(Double.toString(result));
         }
         else if(operator.equals("-"))
         {
-            int result = num1 - num2;
-            display.setText(Integer.toString(result));
+            double result = num1 - num2;
+            display.setText(Double.toString(result));
         }
         else if(operator.equals("*"))
         {
-            int result = num1 * num2;
-            display.setText(Integer.toString(result));
+            double result = num1 * num2;
+            display.setText(Double.toString(result));
         }
         else if(operator.equals("/"))
         {
@@ -221,8 +222,8 @@ public class MainActivity extends AppCompatActivity {
                 num2 = 1;
             }
 
-            int result = num1 / num2;
-            display.setText(Integer.toString(result));
+            double result = num1 / num2;
+            display.setText(Double.toString(result));
         }
 
     }
