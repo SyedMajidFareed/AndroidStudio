@@ -160,6 +160,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void plusBTN(View view)
     {
+        operator = "+";
         String temp=display.getText().toString();
         num1 = Integer.valueOf(temp);
         updateText("");
@@ -167,6 +168,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void minusBTN(View view)
     {
+        operator = "-";
         String temp=display.getText().toString();
         num1 = Integer.valueOf(temp);
         updateText("");
@@ -175,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void multiplyBTN(View view)
     {
+        operator = "*";
         String temp=display.getText().toString();
         num1 = Integer.valueOf(temp);
         updateText("");
@@ -182,6 +185,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void divideBTN(View view)
     {
+        operator = "/";
         String temp=display.getText().toString();
         num1 = Integer.valueOf(temp);
         updateText("");
@@ -194,9 +198,32 @@ public class MainActivity extends AppCompatActivity {
         temp1 = display.getText().toString();
 
         num2 = Integer.valueOf(temp1);
+        if(operator.equals("+"))
+        {
+            int result = num1 + num2;
+            display.setText(Integer.toString(result));
+        }
+        else if(operator.equals("-"))
+        {
+            int result = num1 - num2;
+            display.setText(Integer.toString(result));
+        }
+        else if(operator.equals("*"))
+        {
+            int result = num1 * num2;
+            display.setText(Integer.toString(result));
+        }
+        else if(operator.equals("/"))
+        {
+            if(num2 == 0)
+            {
+                display.setText("Can not divide by 0");
+                num2 = 1;
+            }
 
-        int result = num1 + num2;
-        display.setText(Integer.toString(result));
+            int result = num1 / num2;
+            display.setText(Integer.toString(result));
+        }
 
     }
 }
