@@ -247,18 +247,19 @@
 
     <EditText
         android:id="@+id/displayView"
-        android:textSize="55sp"
         android:layout_width="0dp"
-        android:layout_height="75dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:layout_margin="4dp"
-        android:textAlignment="textEnd"
-        android:text="@string/display"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_weight="1"
         android:autofillHints="false"
         android:inputType="none"
-        tools:ignore="LabelFor" />
+        android:text="@string/display"
+        android:textAlignment="textEnd"
+        android:textSize="55sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="LabelFor"
+        tools:layout_editor_absoluteY="69dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
