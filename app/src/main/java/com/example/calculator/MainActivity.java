@@ -166,7 +166,7 @@ public class MainActivity extends AppCompatActivity {
     public void plusBTN(View view)
     {
         operator = "+";
-        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number") || display.getText().toString().equals("."))
         {
             display.setText("Enter a number");
         }
@@ -182,7 +182,7 @@ public class MainActivity extends AppCompatActivity {
     public void minusBTN(View view)
     {
         operator = "-";
-        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number") || display.getText().toString().equals("."))
         {
             display.setText("Enter a number");
         }
@@ -195,7 +195,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void multiplyBTN(View view) {
         operator = "*";
-        if (display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        if (display.getText().toString().equals("") || display.getText().toString().equals("Enter a number") || display.getText().toString().equals("."))
         {
             display.setText("Enter a number");
         } else {
@@ -209,7 +209,7 @@ public class MainActivity extends AppCompatActivity {
     public void divideBTN(View view)
     {
         operator = "/";
-        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number"))
+        if(display.getText().toString().equals("") || display.getText().toString().equals("Enter a number") || display.getText().toString().equals("."))
         {
             display.setText("Enter a number");
         }
@@ -224,11 +224,12 @@ public class MainActivity extends AppCompatActivity {
     {
         String temp1 = "";
         temp1 = display.getText().toString();
-        if(temp1.equals("") || display.getText().toString().equals("Enter a number"))
+        if(temp1.equals("") || display.getText().toString().equals("Enter a number" ) || display.getText().toString().equals("."))
         {
             display.setText("Enter a number");
         }
-        else {
+        else if (num1 > 0)
+        {
             num2 = Double.valueOf(temp1);
 
             if (operator.equals("+")) {
@@ -249,6 +250,10 @@ public class MainActivity extends AppCompatActivity {
                 double result = num1 / num2;
                 display.setText(Double.toString(result));
             }
+        }
+        else
+        {
+            display.setText("Enter a number");
         }
     }
 }
